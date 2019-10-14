@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./estilos/img/404-bg.png":
+/*!********************************!*\
+  !*** ./estilos/img/404-bg.png ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "/images/404-bg.png?25551196a1c02bc720f0501bdfbbaf6d";
+
+/***/ }),
+
 /***/ "./estilos/img/about.png":
 /*!*******************************!*\
   !*** ./estilos/img/about.png ***!
@@ -284,14 +295,14 @@ module.exports = "/images/recent3.jpg?f610b63d5c424d8ce2e77d9b5d6ba669";
 
 /***/ }),
 
-/***/ "./estilos/img/slide1.jpg":
+/***/ "./estilos/img/slide1.png":
 /*!********************************!*\
-  !*** ./estilos/img/slide1.jpg ***!
+  !*** ./estilos/img/slide1.png ***!
   \********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slide1.jpg?6aea148879e0fbfb29039ee83f11b8d4";
+module.exports = "/images/slide1.png?eb108fe5a357a1724004e30b7564f1ef";
 
 /***/ }),
 
@@ -302,7 +313,7 @@ module.exports = "/images/slide1.jpg?6aea148879e0fbfb29039ee83f11b8d4";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slide2.jpg?afa6d8edb4337321a1c637d110872052";
+module.exports = "/images/slide2.jpg?09f51ce2133f3075fc4d9fab2f2ce92c";
 
 /***/ }),
 
@@ -313,7 +324,7 @@ module.exports = "/images/slide2.jpg?afa6d8edb4337321a1c637d110872052";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/images/slide3.jpg?23a2fb2ddba9ff29d03d6f3c1209f145";
+module.exports = "/images/slide3.jpg?776a64321d37d4caf75e5dc42353971a";
 
 /***/ }),
 
@@ -74873,6 +74884,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Error404; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _estilos_img_404_bg_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../estilos/img/404-bg.png */ "./estilos/img/404-bg.png");
+/* harmony import */ var _estilos_img_404_bg_png__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_estilos_img_404_bg_png__WEBPACK_IMPORTED_MODULE_2__);
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -74893,6 +74907,8 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
+
 var Error404 =
 /*#__PURE__*/
 function (_Component) {
@@ -74907,7 +74923,22 @@ function (_Component) {
   _createClass(Error404, [{
     key: "render",
     value: function render() {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "pagina no encontrada"));
+      var style = {
+        backgroundImage: "url(".concat(_estilos_img_404_bg_png__WEBPACK_IMPORTED_MODULE_2___default.a, ")")
+      };
+      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "error-area",
+        style: style
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "container"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "row justify-content-center"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "col-8"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Ups! la p\xE1gina solicitada no existe"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "/",
+        className: "button"
+      }, "Regresar"))))));
     }
   }]);
 
@@ -75139,6 +75170,27 @@ function (_Component) {
   }
 
   _createClass(Header, [{
+    key: "click",
+    value: function click() {
+      {
+        true ? window.location = "/home" : undefined;
+      }
+    }
+  }, {
+    key: "clickR",
+    value: function clickR() {
+      {
+        true ? window.location = "/register" : undefined;
+      }
+    }
+  }, {
+    key: "clickI",
+    value: function clickI() {
+      {
+        true ? window.location = "/" : undefined;
+      }
+    }
+  }, {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("header", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75148,7 +75200,8 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-6 col-sm-3 logo-column"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/",
+        to: "",
+        onClick: this.clickI.bind(this),
         className: "logo"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
         src: __webpack_require__(/*! ../../../estilos/img/logo.jpg */ "./estilos/img/logo.jpg"),
@@ -75157,19 +75210,7 @@ function (_Component) {
         className: "col-6 col-sm-9 nav-column clearfix"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "right-nav"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-        className: "search-icon fa fa-search"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-        action: "#",
-        className: "search-form"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-        type: "search",
-        placeholder: "Buscar ahora"
-      }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-        type: "submit"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-search"
-      }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "header-social"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "#"
@@ -75182,27 +75223,28 @@ function (_Component) {
       })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "#"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-github"
+        className: "fa fa-whatsapp"
       })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
         id: "menu",
         className: "d-none d-lg-block"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "current-menu-item has-child"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/"
-      }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+        to: "",
+        onClick: this.clickI.bind(this)
+      }, "Inicio"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "sub-menu"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "/"
-      }, "Home - 01")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "index-2.html"
-      }, "Home - 02")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
-        to: "index-3.html"
-      }, "Home - 03")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "",
+        onClick: this.click.bind(this)
+      }, "Mi Cuenta")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+        to: "",
+        onClick: this.clickR.bind(this)
+      }, "Registrarme")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/about"
-      }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+      }, "Nosotros")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/paquetes"
-      }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+      }, "Portafolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
         className: "has-child"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "#"
@@ -75234,7 +75276,7 @@ function (_Component) {
         to: "contact.html"
       }, "Contact")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
-        path: "/home/principal",
+        path: "/",
         component: _home__WEBPACK_IMPORTED_MODULE_3__["default"]
       }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
@@ -75284,8 +75326,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./footer */ "./resources/js/components/footer.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _estilos_img_slide1_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../estilos/img/slide1.jpg */ "./estilos/img/slide1.jpg");
-/* harmony import */ var _estilos_img_slide1_jpg__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_estilos_img_slide1_jpg__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _estilos_img_slide1_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../estilos/img/slide1.png */ "./estilos/img/slide1.png");
+/* harmony import */ var _estilos_img_slide1_png__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_estilos_img_slide1_png__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _estilos_img_slide2_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../estilos/img/slide2.jpg */ "./estilos/img/slide2.jpg");
 /* harmony import */ var _estilos_img_slide2_jpg__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_estilos_img_slide2_jpg__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _estilos_img_slide3_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../estilos/img/slide3.jpg */ "./estilos/img/slide3.jpg");
@@ -75332,13 +75374,13 @@ function (_Component) {
     key: "render",
     value: function render() {
       var style = {
-        backgroundImage: "url(".concat(_estilos_img_slide1_jpg__WEBPACK_IMPORTED_MODULE_5___default.a, ")")
+        backgroundImage: "linear-gradient(\n                rgba(0, 0, 0, 0.5),\n                rgba(0, 0, 0, 0.5)\n              ), url(".concat(_estilos_img_slide1_png__WEBPACK_IMPORTED_MODULE_5___default.a, ")")
       };
       var style2 = {
-        backgroundImage: "url(".concat(_estilos_img_slide2_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, ")")
+        backgroundImage: "linear-gradient(\n                rgba(0, 0, 0, 0.5),\n                rgba(0, 0, 0, 0.5)\n              ), url(".concat(_estilos_img_slide2_jpg__WEBPACK_IMPORTED_MODULE_6___default.a, ")")
       };
       var style3 = {
-        backgroundImage: "url(".concat(_estilos_img_slide3_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, ")")
+        backgroundImage: "linear-gradient(\n                rgba(0, 0, 0, 0.5),\n                rgba(0, 0, 0, 0.5)\n              ), url(".concat(_estilos_img_slide3_jpg__WEBPACK_IMPORTED_MODULE_7___default.a, ")")
       };
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "hero-slider"
@@ -75350,20 +75392,24 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        className: "row"
+        className: "row justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "We Are Digital Product Design Agency."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        id: "h2"
+      }, "A la vanguardia de Tu negocio."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        id: "p"
+      }, "Dise\xF1amos tu pagina web."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-btn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button"
-      }, "Learn More"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Contacto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button-2"
-      }, "Live Preview")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Leer m\xE1s")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-slide",
         style: style2
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75376,7 +75422,11 @@ function (_Component) {
         className: "col-lg-6 text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "We Are Digital Product Design Agency."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        id: "h2"
+      }, "La administraci\xF3n de tu negocio a tu alcance."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        id: "p"
+      }, "Haz m\xE1s eficiente tus tiempos de administracion y ten todo en un solo lugar."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-btn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
@@ -75397,14 +75447,18 @@ function (_Component) {
         className: "col-lg-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "We Are Digital Product Design Agency."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+        id: "h2"
+      }, "Las mejores estrategias de Marketing."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+        id: "p"
+      }, "Porque no solo basta con tu p\xE1gina ."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "slide-btn"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button"
-      }, "Learn More"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Contacto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
-        className: "button-2"
+        className: "button-2 text-black"
       }, "Live Preview")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-6 text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75458,7 +75512,7 @@ function (_Component) {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-title"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Our Service"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Nuestros Servicios"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Consulte nuestros servicios seguro tenemos lo que necesita.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
@@ -75469,10 +75523,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-film"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Video Making")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fa fa-desktop"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Paginas web")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Dale presencia a tu negocio colocandolo en internet.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
@@ -75481,10 +75535,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-camera"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Photography")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fa fa-mobile"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Apps M\xF3viles")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Desarrollo de aplicaciones m\xF3viles para android y ios.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
@@ -75493,10 +75547,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-        className: "fa fa-music"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Music Composing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "fa fa-keyboard-o"
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Desarrollo de software")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Necesitas algo espec\xEDfico podemos desarrollarlo.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
@@ -75506,9 +75560,9 @@ function (_Component) {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bullhorn"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Product Marketing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Marketing Digital")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Las mejores t\xE9cnicas para que tu negocio tenga presencia online.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
@@ -75518,9 +75572,9 @@ function (_Component) {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-magic"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Video Editing")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "E-commerce ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Vende tus productos en linea de manera local y nacional.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-4 col-md-6 single-service"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
@@ -75530,15 +75584,15 @@ function (_Component) {
         className: "icon"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
         className: "fa fa-bar-chart"
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Presentation")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Software para administraci\xF3n")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Pellentesque habitant morbi tristique senectus et netus et malesuada fames."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Enfocado a los peque\xF1os negocios."))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "portfolio-area sp"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-title"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Latest Work"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Nuestros \xDAltimos Trabajos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Clientes satisfechos.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-portfolio col-md-4"
@@ -75656,13 +75710,13 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button"
-      }, "More Works"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Contacto"))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "testimonial-area sp bg1"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-title white"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Clients Review"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Opiniones de nuestros clientes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "testimonial-slider"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-slide"
@@ -75722,7 +75776,13 @@ function (_Component) {
         className: "container"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "section-title"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Frequently Asked Questions"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", null, "Preguntas Frecuentes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Aun no se convence env\xEDenos un whatsapp o m\xE1rquenos!."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "header-social"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+        to: "#"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+        className: "fa fa-whatsapp fa-3x"
+      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "row"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6"
@@ -75730,21 +75790,25 @@ function (_Component) {
         className: "faq"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Low Cost Advertising Available or Not?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Hay costos ocultos?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, "Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "no! nuestros precios son reales no hay trucos enga\xF1os o cobros escondidos")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "What Is The Big R For Marketing Your Business?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Mi dominio tiene prefijo de su empresa?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, "Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Para nada! el dominio usted lo escoge, y llevara el nombre que usted elija siempre y cuando est\xE9 disponible.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Does Using Banner Stands Increase Trade Show Traffic?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Puedo escalar mi paquete?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, "Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Claro que s\xED! usted puede cambiar su paquete o en su defecto podemos codificarlo si alguno de nuestros paquetes no cubre sus expectativas.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-item"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "How To Write Better Advertising Copy?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "El precio incluye marketing?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
-      }, "Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "No! los precios solo incluyen dominio y hosting ademas de la creaci\xF3n del sitio pero las campa\xF1as de marketing son un costo a parte.")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "single-item"
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "Por qu\xE9 rentar en lugar de comprar?"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, "Debido a los costos de dominio desarrollo y dise\xF1o la mayor\xEDa de las peque\xF1as empresas o negocios locales que a penas inician no pueden hacer una inversion inicial fuerte, as\xED que, por qu\xE9 no rentarlo? sin invertir nada como si de una casa se tratase.")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-6"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "faq-img text-center"

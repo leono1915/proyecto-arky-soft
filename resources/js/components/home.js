@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link, Redirect } from 'react-router-dom
 import Header from './header';
 import Footer from './footer';
 import ReactDOM from 'react-dom';
-import Background1 from '../../../estilos/img/slide1.jpg';
+import Background1 from '../../../estilos/img/slide1.png';
 import Background2 from '../../../estilos/img/slide2.jpg';
 import Background3 from '../../../estilos/img/slide3.jpg';
 export default class Home  extends Component {
@@ -15,13 +15,23 @@ export default class Home  extends Component {
     }
     render(){
         const style={
-            backgroundImage: `url(${Background1})`
+            backgroundImage: `linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ), url(${Background1})`,
+          
         }
         const style2={
-            backgroundImage: `url(${Background2})`
+            backgroundImage: `linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ), url(${Background2})`
         }
         const style3={
-            backgroundImage: `url(${Background3})`
+            backgroundImage: `linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ), url(${Background3})`
         }
         
 
@@ -35,14 +45,14 @@ export default class Home  extends Component {
             <div className="single-slide" style={style} >
                 <div className="inner">
                     <div className="container">
-                        <div className="row">
+                        <div className="row justify-content-center">
                             <div className="col-lg-6">
                                 <div className="slide-content">
-                                    <h2>We Are Digital Product Design Agency.</h2>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <h2  id="h2">A la vanguardia de Tu negocio.</h2>
+                                    <p  id="p">Diseñamos tu pagina web.</p>
                                     <div className="slide-btn">
-                                        <a href="#" className="button">Learn More</a>
-                                        <a href="#" className="button-2">Live Preview</a>
+                                        <a href="#" className="button">Contacto</a>
+                                        <a href="#" className="button-2">Leer más</a>
                                     </div>
                                 </div>
                             </div>
@@ -56,8 +66,8 @@ export default class Home  extends Component {
                         <div className="row justify-content-center">
                             <div className="col-lg-6 text-center">
                                 <div className="slide-content">
-                                    <h2>We Are Digital Product Design Agency.</h2>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <h2 id="h2">La administración de tu negocio a tu alcance.</h2>
+                                    <p id="p" >Haz más eficiente tus tiempos de administracion y ten todo en un solo lugar.</p>
                                     <div className="slide-btn">
                                         <a href="#" className="button">Learn More</a>
                                         <a href="#" className="button-2">Live Preview</a>
@@ -74,11 +84,11 @@ export default class Home  extends Component {
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="slide-content">
-                                    <h2>We Are Digital Product Design Agency.</h2>
-                                    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                                    <h2 id="h2">Las mejores estrategias de Marketing.</h2>
+                                    <p id="p">Porque no solo basta con tu página .</p>
                                     <div className="slide-btn">
-                                        <a href="#" className="button">Learn More</a>
-                                        <a href="#" className="button-2">Live Preview</a>
+                                        <a href="#" className="button">Contacto</a>
+                                        <a href="#" className="button-2 text-black">Live Preview</a>
                                     </div>
                                 </div>
                             </div>
@@ -129,20 +139,20 @@ export default class Home  extends Component {
 <div className="service-area bg2 sp">
     <div className="container">
         <div className="section-title">
-            <h2>Our Service</h2>
-            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+            <h2>Nuestros Servicios</h2>
+            <p>Consulte nuestros servicios seguro tenemos lo que necesita.</p>
         </div>
         <div className="row">
             <div className="col-lg-4 col-md-6 single-service">
                 <div className="inner">
                     <div className="title">
                         <div className="icon">
-                            <i className="fa fa-film"></i>
+                            <i className="fa fa-desktop"></i>
                         </div>
-                        <h4>Video Making</h4>
+                        <h4>Paginas web</h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Dale presencia a tu negocio colocandolo en internet.</p>
                     </div>
                 </div>
             </div>
@@ -150,12 +160,12 @@ export default class Home  extends Component {
                 <div className="inner">
                     <div className="title">
                         <div className="icon">
-                            <i className="fa fa-camera"></i>
+                            <i className="fa fa-mobile"></i>
                         </div>
-                        <h4>Photography</h4>
+                        <h4>Apps Móviles</h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Desarrollo de aplicaciones móviles para android y ios.</p>
                     </div>
                 </div>
             </div>
@@ -163,12 +173,12 @@ export default class Home  extends Component {
                 <div className="inner">
                     <div className="title">
                         <div className="icon">
-                            <i className="fa fa-music"></i>
+                            <i className="fa fa-keyboard-o"></i>
                         </div>
-                        <h4>Music Composing</h4>
+                        <h4>Desarrollo de software</h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Necesitas algo específico podemos desarrollarlo.</p>
                     </div>
                 </div>
             </div>
@@ -178,10 +188,10 @@ export default class Home  extends Component {
                         <div className="icon">
                             <i className="fa fa-bullhorn"></i>
                         </div>
-                        <h4>Product Marketing</h4>
+                        <h4>Marketing Digital</h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Las mejores técnicas para que tu negocio tenga presencia online.</p>
                     </div>
                 </div>
             </div>
@@ -191,10 +201,10 @@ export default class Home  extends Component {
                         <div className="icon">
                             <i className="fa fa-magic"></i>
                         </div>
-                        <h4>Video Editing</h4>
+                        <h4>E-commerce </h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Vende tus productos en linea de manera local y nacional.</p>
                     </div>
                 </div>
             </div>
@@ -204,10 +214,10 @@ export default class Home  extends Component {
                         <div className="icon">
                             <i className="fa fa-bar-chart"></i>
                         </div>
-                        <h4>Presentation</h4>
+                        <h4>Software para administración</h4>
                     </div>
                     <div className="content">
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames.</p>
+                        <p>Enfocado a los pequeños negocios.</p>
                     </div>
                 </div>
             </div>
@@ -217,8 +227,8 @@ export default class Home  extends Component {
 <div className="portfolio-area sp">
     <div className="container">
         <div className="section-title">
-            <h2>Latest Work</h2>
-            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+            <h2>Nuestros Últimos Trabajos</h2>
+            <p>Clientes satisfechos.</p>
         </div>
         <div className="row">
             <div className="single-portfolio col-md-4">
@@ -320,14 +330,14 @@ export default class Home  extends Component {
         </div>
         <div className="row">
             <div className="col-12 text-center" data-margin="40px 0 0">
-                <a href="#" className="button">More Works</a>
+                <a href="#" className="button">Contacto</a>
             </div>
         </div>
     </div>
 </div><div className="testimonial-area sp bg1">
     <div className="container">
         <div className="section-title white">
-            <h2>Clients Review</h2>
+            <h2>Opiniones de nuestros clientes</h2>
             <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
         </div>
         <div className="testimonial-slider">
@@ -392,34 +402,46 @@ export default class Home  extends Component {
 </div><div className="faq-area sp bg2">
     <div className="container">
         <div className="section-title">
-            <h2>Frequently Asked Questions</h2>
-            <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
+            <h2>Preguntas Frecuentes</h2>
+            <p>Aun no se convence envíenos un whatsapp o márquenos!.</p>
+            <div className="header-social">
+                                
+                                <Link to="#" ><i className="fa fa-whatsapp fa-3x"></i></Link>
+                            </div>
         </div>
         <div className="row">
             <div className="col-md-6">
                 <div className="faq">
                     <div className="single-item">
-                        <h4>Low Cost Advertising Available or Not?</h4>
+                        <h4>Hay costos ocultos?</h4>
                         <div className="content">
-                            Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                          no! nuestros precios son reales no hay trucos engaños o cobros escondidos
                         </div>
                     </div>
                     <div className="single-item">
-                        <h4>What Is The Big R For Marketing Your Business?</h4>
+                        <h4>Mi dominio tiene prefijo de su empresa?</h4>
                         <div className="content">
-                            Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                            Para nada! el dominio usted lo escoge, y llevara el nombre que usted elija siempre y cuando esté disponible.
                         </div>
                     </div>
                     <div className="single-item">
-                        <h4>Does Using Banner Stands Increase Trade Show Traffic?</h4>
+                        <h4>Puedo escalar mi paquete?</h4>
                         <div className="content">
-                            Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                           Claro que sí! usted puede cambiar su paquete o en su defecto podemos codificarlo si alguno de nuestros paquetes no cubre
+                           sus expectativas.
                         </div>
                     </div>
                     <div className="single-item">
-                        <h4>How To Write Better Advertising Copy?</h4>
+                        <h4>El precio incluye marketing?</h4>
                         <div className="content">
-                            Pellentesque habitant morbi tristique senectus et netus et malesu ada fames and reply to all.
+                            No! los precios solo incluyen dominio y hosting ademas de la creación del sitio pero las campañas de marketing son un costo a parte.
+                        </div>
+                    </div>
+                    <div className="single-item">
+                        <h4>Por qué rentar en lugar de comprar?</h4>
+                        <div className="content">
+                           Debido a los costos de dominio desarrollo y diseño la mayoría de las pequeñas empresas o negocios locales que a penas inician no pueden
+                           hacer una inversion inicial fuerte, así que, por qué no rentarlo? sin invertir nada como si de una casa se tratase.
                         </div>
                     </div>
                 </div>

@@ -424,12 +424,25 @@ form.search-form button {
     .hero-slider .single-slide {
       font-size: 18px;
       line-height: 24px;
-      text-align: center; } }
+      text-align: center; }
+      
+    }
+    .slide-content #h2 , #p{
+      color:white;
+    }
+  @media only screen and (min-width: 200px) and (max-width: 995px){
+    .slide-content #h2 , #p{
+      color:black;
+    }
+  }
+ 
   .hero-slider .single-slide h2 {
     font-size: 50px;
     line-height: 67px;
     margin: 0 0 25px;
-    font-weight: 700; }
+    font-weight: 700;
+    color:black;
+  }
     @media only screen and (max-width: 767px) {
       .hero-slider .single-slide h2 {
         font-size: 30px;

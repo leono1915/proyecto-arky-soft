@@ -4,11 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-
+        <title>Arky-sof</title>
        
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-         
+        <link rel="shortcut icon" type="image/x-icon" href="{{asset('images/logo.jpg')}}" />
     <link rel="stylesheet" href="{{asset('css/css/owl.carousel.css')}}">
     <link rel="stylesheet" href="{{asset('css/css/barfiller.css')}}">
     <link rel="stylesheet" href="{{asset('css/css/animate.css')}}">
