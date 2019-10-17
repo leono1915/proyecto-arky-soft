@@ -75248,7 +75248,7 @@ function (_Component) {
         className: "has-child"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "#"
-      }, "Pages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+      }, "Productos"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
         className: "sub-menu"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "/"
@@ -75274,7 +75274,7 @@ function (_Component) {
         to: "/"
       }, "Testimonial")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
         to: "contact.html"
-      }, "Contact")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
+      }, "Contacto")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Route"], {
         exact: true,
         path: "/",
         component: _home__WEBPACK_IMPORTED_MODULE_3__["default"]
@@ -75409,7 +75409,7 @@ function (_Component) {
       }, "Contacto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button-2"
-      }, "Leer m\xE1s")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Leer M\xE1s")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-slide",
         style: style2
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75431,10 +75431,10 @@ function (_Component) {
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button"
-      }, "Learn More"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      }, "Contacto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button-2"
-      }, "Live Preview")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Leer M\xE1s")))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "single-slide",
         style: style3
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -75459,7 +75459,7 @@ function (_Component) {
       }, "Contacto"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "#",
         className: "button-2 text-black"
-      }, "Live Preview")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "Leer M\xE1s")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-lg-6 text-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner embed-responsive embed-responsive-16by9",
@@ -75474,39 +75474,19 @@ function (_Component) {
         className: "col-md-3 col-6 single-brand"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../estilos/img/brand1.png */ "./estilos/img/brand1.png"),
-        alt: ""
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3 col-6 single-brand"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../estilos/img/brand2.png */ "./estilos/img/brand2.png"),
-        alt: ""
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3 col-6 single-brand"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../estilos/img/brand3.png */ "./estilos/img/brand3.png"),
-        alt: ""
-      })))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "col-md-3 col-6 single-brand"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "inner"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-        href: "#"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: __webpack_require__(/*! ../../../estilos/img/brand4.png */ "./estilos/img/brand4.png"),
-        alt: ""
-      }))))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "service-area bg2 sp"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
@@ -76343,7 +76323,12 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Listar).call(this));
     _this.state = {
-      paquetes: [],
+      paquetes: [{
+        nombre: '',
+        descripcion: '',
+        precio: '',
+        id: ''
+      }],
       activePage: 1,
       itemsCountPerPage: 1,
       totalItemsCount: 1,
@@ -76372,8 +76357,62 @@ function (_Component) {
       var _this3 = this;
 
       axios__WEBPACK_IMPORTED_MODULE_3___default.a["delete"]('/api/paquetes/delete/' + id).then(function (response) {
-        _this3.componentDidMount();
+        var paquetes = _this3.state.paquetes;
+
+        for (var i = 0; i < _this3.state.paquetes.length; i++) {
+          if (paquetes[i].id == id) {
+            paquetes.splice(i, 1);
+
+            _this3.setState({
+              paquetes: paquetes
+            });
+          }
+        }
       });
+    }
+  }, {
+    key: "onclick",
+    value: function onclick(e) {
+      console.log(e);
+      console.log(this.state.paquetes[e].id);
+      this.setState(function (estate) {
+        var list = estate.paquetes.map(function (item, j) {
+          if (j === e) {
+            return item.id++;
+          } else {
+            return item;
+          }
+        });
+        return {
+          list: list
+        };
+      });
+    }
+  }, {
+    key: "onclickDown",
+    value: function onclickDown(e) {
+      console.log(e);
+      console.log(this.state.paquetes[e].id);
+      if (this.state.paquetes[e].id == 1) return;
+      this.setState(function (estate) {
+        var list = estate.paquetes.map(function (item, j) {
+          if (j === e) {
+            item.id--;
+            item.nombre = "hola soy otro";
+            return item;
+          } else {
+            return item;
+          }
+        });
+        return {
+          list: list
+        };
+      });
+    }
+  }, {
+    key: "nombre",
+    value: function nombre(e) {
+      return this.onclick(e); //console.log(e.target.value+"segund"+this.state.paquetes.map)
     }
   }, {
     key: "handlePageChange",
@@ -76413,21 +76452,30 @@ function (_Component) {
       }, "Handle"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
         colSpan: "2",
         scope: "col"
-      }, "Acciones"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.paquetes.map(function (e) {
-        var i = 0;
+      }, "Acciones"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tbody", null, this.state.paquetes.map(function (e, index) {
         return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("tr", {
-          key: e.id
+          key: index
         }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("th", {
           scope: "row"
-        }, i + 1), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.nombre), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.descripcion), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.precio), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+        }, index), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.nombre), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.descripcion), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, e.precio), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
           className: "btn btn-danger",
           onClick: _this5.onDelete.bind(_this5, e.id)
         }, "Eliminar"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
           to: "/paquetes/editar/".concat(e.id),
           className: "btn btn-success" //  onClick={this.onUpdate.bind(this,e.id)}
 
-        }, "Actualizar")));
-        i++;
+        }, "Actualizar")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("td", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          className: " btn btn-primary",
+          onClick: _this5.onclickDown.bind(_this5, index)
+        }, "disminuir"), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+          type: "text",
+          value: _this5.state.paquetes[index].id,
+          onChange: _this5.nombre.bind(_this5) // onClick={this.nombre.bind(this,index)}
+
+        }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+          className: " btn btn-primary",
+          onClick: _this5.onclick.bind(_this5, index)
+        }, "aumentar")));
       }))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "d-flex justify-content-center"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_js_pagination__WEBPACK_IMPORTED_MODULE_4___default.a, {

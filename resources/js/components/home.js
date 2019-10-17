@@ -52,7 +52,7 @@ export default class Home  extends Component {
                                     <p  id="p">Diseñamos tu pagina web.</p>
                                     <div className="slide-btn">
                                         <a href="#" className="button">Contacto</a>
-                                        <a href="#" className="button-2">Leer más</a>
+                                        <a href="#" className="button-2">Leer Más</a>
                                     </div>
                                 </div>
                             </div>
@@ -69,8 +69,8 @@ export default class Home  extends Component {
                                     <h2 id="h2">La administración de tu negocio a tu alcance.</h2>
                                     <p id="p" >Haz más eficiente tus tiempos de administracion y ten todo en un solo lugar.</p>
                                     <div className="slide-btn">
-                                        <a href="#" className="button">Learn More</a>
-                                        <a href="#" className="button-2">Live Preview</a>
+                                        <a href="#" className="button">Contacto</a>
+                                        <a href="#" className="button-2">Leer Más</a>
                                     </div>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@ export default class Home  extends Component {
                                     <p id="p">Porque no solo basta con tu página .</p>
                                     <div className="slide-btn">
                                         <a href="#" className="button">Contacto</a>
-                                        <a href="#" className="button-2 text-black">Live Preview</a>
+                                        <a href="#" className="button-2 text-black">Leer Más</a>
                                     </div>
                                 </div>
                             </div>
@@ -107,30 +107,22 @@ export default class Home  extends Component {
         <div className="row">
             <div className="col-md-3 col-6 single-brand">
                 <div className="inner">
-                    <a href="#">
-                        <img src={ require('../../../estilos/img/brand1.png')}  alt=""/>
-                    </a>
+                   
                 </div>
             </div>
             <div className="col-md-3 col-6 single-brand">
                 <div className="inner">
-                    <a href="#">
-                        <img src={ require('../../../estilos/img/brand2.png')}  alt=""/>
-                    </a>
+                   
                 </div>
             </div>
             <div className="col-md-3 col-6 single-brand">
                 <div className="inner">
-                    <a href="#">
-                        <img src={ require('../../../estilos/img/brand3.png')}  alt=""/>
-                    </a>
+                   
                 </div>
             </div>
             <div className="col-md-3 col-6 single-brand">
                 <div className="inner">
-                    <a href="#">
-                        <img src={ require('../../../estilos/img/brand4.png')}  alt=""/>
-                    </a>
+                  
                 </div>
             </div>
         </div>

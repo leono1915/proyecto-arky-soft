@@ -61,7 +61,7 @@ export default class Header  extends Component {
                                 <li><Link to="/about">Nosotros</Link></li>
                                 <li><Link to="/paquetes">Portafolio</Link></li>
                                 <li className="has-child">
-                                    <Link to="#">Pages</Link>
+                                    <Link to="#">Productos</Link>
                                     <ul className="sub-menu">
                                         <li><Link to="/">404</Link></li>
                                         <li><Link to="/">About</Link></li>
@@ -76,7 +76,7 @@ export default class Header  extends Component {
                                         <li><Link to="/">Testimonial</Link></li>
                                     </ul>
                                 </li>
-                                <li><Link to="contact.html">Contact</Link></li>
+                                <li><Link to="contact.html">Contacto</Link></li>
                             </ul>
                         </nav>
                     </div>

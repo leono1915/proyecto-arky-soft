@@ -10,16 +10,25 @@ class Listar   extends Component {
     constructor(){
         super();
         this.state={
-            paquetes:[],
+            paquetes:[
+                {
+                nombre:'',
+                descripcion:'',
+                precio:'',
+                id:''
+                }
+            ],
             activePage:1,
             itemsCountPerPage:1,
             totalItemsCount:1,
-            pageRangeDisplayed:5
+            pageRangeDisplayed:5,
+           
+            
         }
     }
     componentDidMount(){
         axios.get('/api/paquetes').then(response=>{
-               this.setState({ paquetes:response.data.data,
+               this.setState({ paquetes:response.data.data,               
                 itemsCountPerPage:response.data.per_page,
                 totalItemsCount:response.data.total,
               activePage:response.data.current_page})
@@ -27,12 +36,60 @@ class Listar   extends Component {
     }
     onDelete(id){
          axios.delete('/api/paquetes/delete/'+id).then(response=>{
-                  this.componentDidMount();
+             var paquetes=this.state.paquetes;
+                 for(var i=0;i<this.state.paquetes.length;i++){
+                     if(paquetes[i].id==id){
+                        paquetes.splice(i,1);
+                         this.setState({paquetes:paquetes})
+                     }
+                 }
          })
      
     }
-  
-    
+   onclick(e){
+       console.log(e)
+       console.log(this.state.paquetes[e].id)
+      
+       this.setState(estate=>{
+                const list=estate.paquetes.map((item,j)=>{
+                    if(j===e){
+                       return item.id++;
+                    }else{
+                        return item
+                    }
+                })
+                return {
+                    list,
+                }
+       })
+        
+   }
+   onclickDown(e){
+    console.log(e)
+    console.log(this.state.paquetes[e].id)
+   if(this.state.paquetes[e].id==1) return;
+    this.setState(estate=>{
+             const list=estate.paquetes.map((item,j)=>{
+                 if(j===e){
+                     item.id--;
+                     item.nombre="hola soy otro";
+                    return item;
+                 }else{
+                     return item
+                 }
+             })
+             return {
+                 list,
+             }
+    })
+     
+}
+    nombre(e){
+      
+        return this.onclick(e)
+        //console.log(e.target.value+"segund"+this.state.paquetes.map)
+
+    }
    
    handlePageChange(pageNumber){
        console.log(`activate page is ${pageNumber}`);
@@ -65,24 +122,38 @@ class Listar   extends Component {
     </tr>
   </thead>
   <tbody>
- { this.state.paquetes.map(e => {
+ {   
+     this.state.paquetes.map((e,index)=> {
    
-     var i=0;
+        
      return(
-    <tr  key={e.id} > 
-      <th scope="row" >{i+1}</th>
+    <tr   key={index}> 
+      <th scope="row" >{index}</th>
       <td>{e.nombre}</td>
       <td>{e.descripcion}</td>
       <td>{e.precio}</td>
       <td > <button className="btn btn-danger"
       onClick={this.onDelete.bind(this,e.id)}
       >Eliminar</button>
-      <Link to= {`/paquetes/editar/${e.id}`} className="btn btn-success"
+      <Link to= {`/paquetes/editar/${e.id}`} className="btn btn-success" 
     //  onClick={this.onUpdate.bind(this,e.id)}
       >Actualizar</Link>
       </td>
-     </tr> )
-    i++;  
+      <td><button className=" btn btn-primary"
+      onClick={this.onclickDown.bind(this,index)}
+      >
+         
+           disminuir</button> <input type="text"   value={this.state.paquetes[index].id}
+      onChange={this.nombre.bind(this)}
+    
+      // onClick={this.nombre.bind(this,index)}
+      /><button className=" btn btn-primary"
+      onClick={this.onclick.bind(this,index)}
+      >
+         
+           aumentar</button></td>
+     </tr>  )
+     
      
 })
  }
